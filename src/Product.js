@@ -1,20 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import {Route} from "react-router-dom";
 import PayPal from "./PayPal";
-import Credit from "./Credit";
-import {
-  CardElement,
-  StripeProvider,
-  Elements,
-  injectStripe
-} from "react-stripe-elements";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext
-} from "pure-react-carousel";
 
 class Product extends React.Component {
   constructor(props, context) {
@@ -43,7 +29,6 @@ class Product extends React.Component {
       .then(responseJson => {
         let product = responseJson.data;
         var photo = require(`../src/img/${product.photos[0]}.png`);
-        var link = `/tees/${product.ext}`;
         var pay = props => {
           return <PayPal payPalId={product.payPal} />;
         };

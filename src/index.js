@@ -4,9 +4,9 @@ import './index.css';
 
 
 
-import {BrowserRouter, Route} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import Game from './Game';
-import {StripeProvider, injectStripe} from 'react-stripe-elements';
+import {StripeProvider} from 'react-stripe-elements';
 
 ReactDOM.render( 
 <BrowserRouter>

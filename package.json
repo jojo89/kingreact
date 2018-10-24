@@ -5,17 +5,24 @@
   "homepage": "http://kingsizequeen.com.s3-website.us-west-1.amazonaws.com/",
   "dependencies": {
     "pure-react-carousel": "^1.11.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-free-carousel": "^1.0.5",
     "react-image-slider": "^0.1.0",
     "react-responsive-carousel": "^3.1.33",
     "react-router-dom": "^4.2.2",
+    "react-scripts": "2.0.5",
     "react-slick": "^0.20.0",
     "react-slidez": "0.0.20",
     "react-stripe-elements": "^1.2.1",
     "react-validation": "^3.0.7",
     "validator": "^9.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
@@ -23,9 +30,9 @@
     "sass-loader": "^6.0.7",
     "autoprefixer": "6.7.2",
     "babel-core": "6.22.1",
-    "babel-eslint": "7.1.1",
-    "babel-jest": "18.0.0",
-    "babel-loader": "6.2.10",
+    "babel-eslint": "9.0.0",
+    "babel-jest": "23.6.0",
+    "babel-loader": "8.0.4",
     "babel-preset-react-app": "^2.2.0",
     "babel-runtime": "^6.20.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
@@ -35,7 +42,7 @@
     "css-loader": "0.26.1",
     "detect-port": "1.1.0",
     "dotenv": "2.0.0",
-    "eslint": "3.16.1",
+    "eslint": "5.6.0",
     "eslint-config-react-app": "^0.6.2",
     "eslint-loader": "1.6.0",
     "eslint-plugin-flowtype": "2.21.0",
@@ -47,7 +54,7 @@
     "fs-extra": "0.30.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.3",
-    "jest": "18.1.0",
+    "jest": "23.6.0",
     "json-loader": "0.5.4",
     "object-assign": "4.1.1",
     "postcss-loader": "1.2.2",
@@ -55,15 +62,10 @@
     "react-dev-utils": "^0.5.2",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
-    "webpack": "1.14.0",
-    "webpack-dev-server": "1.16.2",
+    "webpack": "4.19.1",
+    "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.2"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -96,5 +98,11 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

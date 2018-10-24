@@ -1,19 +1,4 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
-import Product from "./Product";
-import {
-  CardElement,
-  StripeProvider,
-  Elements,
-  injectStripe
-} from "react-stripe-elements";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext
-} from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 class Tees extends React.Component {
@@ -56,18 +41,11 @@ class Tees extends React.Component {
   }
 
   render() {
-    const tee = require("../src/white.jpg");
-    const frontfar = require("../src/img/frontfar.jpg");
-    const backfar = require("../src/img/backfar.jpg");
-    const close = require("../src/img/close.jpg");
-    const crewNote = require("../src/img/crew.png");
-    const crew = require("../src/img/crew.jpg");
 
     return (
       <div>
         <div className="container">
           <div className="row">
-            <h1 className="post-subtitle" />
             <div className="post-preview">
               <div className="center">
                 {this.state.productions}
